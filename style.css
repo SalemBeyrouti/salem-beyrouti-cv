@@ -1,0 +1,167 @@
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+
+}
+
+.profile-container{
+    width:120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow:hidden ;
+
+}
+
+.profile-photo {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.container {
+
+    max-width: 900px;
+    margin: auto;
+    padding: 2.5rem;
+    background: white;
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgb(175, 149, 149);
+    position: relative;
+    background-color: bisque;
+    color: black;
+    
+}
+
+header h1 {
+    margin: 0;
+    color: #020202
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+
+color: #474545;
+font-size: 1.2rem;
+margin-top: 0.5rem;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2{
+    color: rgb(32, 58, 186);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+
+}
+
+h3 {
+    color: #0a1e84;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact ul {
+
+    list-style: circle;
+    padding: 0;
+    display: contents;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    text-justify: inter-word;
+    font-size: large;
+    gap: 0.3rem;
+    flex-wrap:wrap;
+}
+
+.contact a {
+    color: blue;
+    text-decoration: none;
+    
+}
+
+.contact a:hover {
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.experience h3, .education p{
+    margin-bottom: 0.3rem;
+}
+
+.experience p, .education p{
+    color: #0a1e84;
+    font-style: italic;
+}
+
+.education a{
+    color:blue;
+    text-decoration: none;
+    font-weight: 800;
+    border-bottom: 1px solid;
+}
+
+.education a:hover {
+    color:cornflowerblue;
+    border-bottom-color: cornflowerblue;
+}
+
+.skills ul {
+    display: grid;
+    gap: 0.5rem;
+}
+
+footer{
+
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #357074;
+    font-size: 1rem;
+    background: bisque;
+}
+
+@media (max-width: 768px) {
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+}
